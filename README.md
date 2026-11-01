@@ -4,7 +4,7 @@ Project Overview
 
 This project analyzes retail transaction data to identify valuable
 customers, understand purchasing behavior, and develop targeted customer
-retention strategies using \*\*RFM (Recency, Frequency, Monetary)
+retention strategies using RFM (Recency, Frequency, Monetary)
 Analysis.
 
 The objective is to help marketing teams identify high-value customers,
@@ -54,15 +54,12 @@ Customers were evaluated using:
 Customers received quintile-based RFM scores and were classified into
 five segments.
 
-Customer Segment     Customers Recommended Strategy
-
-\---
-
-Champions                  941 VIP rewards and loyalty benefits
-Loyal                      999 Repeat purchase incentives
-At Risk                    466 Win-back campaigns
-New / Potential            663 Second-purchase offers
-Lost                     1,269 Low-cost reactivation
+      Customer Segment             Customers Recommended Strategy
+        Champions                  941 VIP rewards and loyalty benefits
+        Loyal                      999 Repeat purchase incentives
+        At Risk                    466 Win-back campaigns
+        New / Potential            663 Second-purchase offers
+        Lost                       1,269 Low-cost reactivation
 
 Power BI Dashboard
 
@@ -86,16 +83,14 @@ Page 2 --- Retention \& Budget Strategy
 
 Proposed Marketing Budget Allocation
 
-Segment              Proposed Allocation
-----------------------------------------
-At Risk 
-                                    30%
-                                    
-Champions                           25%
-Loyal                               25%
-New / Potential                     10%
-Lost                                10%
-Total                              100%
+
+    Segment                                  Proposed Allocation(%)                                                                                                  
+    At Risk                                            30%
+    Champions                                          25%
+    Loyal                                              25%
+    New / Potential                                    10%
+    Lost                                               10%
+    Total                                              100%
 
 Key Findings
 
@@ -138,24 +133,31 @@ recommendations.
 Repository Structure
 
 Customer\_Segmentation\_RFM/
-│
-├── data/
-│   └── Online Retail.xlsx
-│
-├── notebooks/
-│   └── Customer\_Segmentation\_RFM.ipynb
-│
-├── output/
-│   ├── customer\_rfm.csv
-│   ├── segment\_summary.csv
-│   └── cleaned\_transactions.csv
-│
-├── powerbi/
-│   └── Retail\_Ecommerce\_Customer\_Segmentation\_RFM.pbix
-│
-├── screenshots/
-│   ├── customer\_segmentation.png
-│   └── retention\_budget\_strategy.png
-│
-└── README.md
 
+      ├── data/
+      |  └── Online Retail.xlsx
+      | 
+      ├── notebooks/
+      | └── Customer\_Segmentation\_RFM.ipynb
+      |   
+      ├── output/│             
+      |      ├── customer\_rfm.csv
+      |      ├── segment\_summary.csv
+      |      └── cleaned\_transactions.csv
+      |        
+      |── powerbi
+      | └── Retail\_Ecommerce\_Customer\_Segmentation\_RFM.pbix 
+      ├── screenshots/   
+      |   ├── customer\_segmentation.png 
+      |   └── retention\_budget\_strategy.png
+      |
+      └── README.md
+      
+
+Dashboard Screenshots
+
+Page 1 — Customer Segmentation
+![Customer Segmentation Dashboard](screenshots/customer_segmentation.png)
+
+Page 2 — Retention & Budget Strategy
+![Retention & Budget Strategy Dashboard](screenshots/retention_budget_strategy.png)
