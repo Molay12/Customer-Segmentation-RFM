@@ -1,0 +1,6 @@
+Segment,Customers,Gross_Sales,Average_Customer_Sales,Avg_Recency_Days,Avg_Frequency,Customer_Share_%,Gross_Sales_Share_%
+At Risk,466,766529.58,1644.91,140.18,3.82,10.74,8.63
+Champions,941,5741913.58,6101.93,12.98,11.21,21.69,64.61
+Lost,1269,584095.52,460.28,211.1,1.31,29.25,6.57
+Loyal,999,1493228.74,1494.72,33.76,3.74,23.03,16.8
+New / Potential,663,301441.47,454.66,37.02,1.2,15.28,3.39
