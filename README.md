@@ -43,23 +43,39 @@ Data Cleaning \& Preparation
 
 Final dataset: 392,692 transactions and 4,338 customers.
 
-RFM Analysis
+## RFM Analysis Methodology
 
-Customers were evaluated using:
+RFM analysis evaluates customers based on three purchasing behaviours:
 
-* Recency: How recently a customer purchased.
-* Frequency: How often a customer purchased.
-* Monetary: How much a customer spent.
+| Metric | Meaning | Business Interpretation |
+|---|---|---|
+| Recency (R) | Days since the customer's last purchase | Lower recency indicates a more recently active customer |
+| Frequency (F) | Number of unique invoices/orders | Higher frequency indicates more repeat purchases |
+| Monetary (M) | Total customer spending | Higher monetary value indicates greater customer revenue contribution |
 
-Customers received quintile-based RFM scores and were classified into
-five segments.
+### RFM Scoring
 
-      Customer Segment             Customers Recommended Strategy
-        Champions                  941 VIP rewards and loyalty benefits
-        Loyal                      999 Repeat purchase incentives
-        At Risk                    466 Win-back campaigns
-        New / Potential            663 Second-purchase offers
-        Lost                       1,269 Low-cost reactivation
+- Customers are divided into five scoring groups for each RFM metric.
+- Recency is scored in reverse order: customers with fewer days since their last purchase receive higher scores.
+- Frequency and Monetary are scored in ascending order: customers with higher purchase frequency and spending receive higher scores.
+- Each metric receives a score from 1 to 5.
+- The overall RFM score is calculated as:
+
+`RFM Total = R Score + F Score + M Score`
+
+### Customer Segmentation
+
+Customers are assigned to five business segments:
+
+- **Champions:** Recent, frequent, and high-value customers.
+- **Loyal:** Customers who purchase repeatedly and contribute consistent value.
+- **At Risk:** Previously valuable customers who have not purchased recently.
+- **New / Potential:** Recent customers with opportunities for repeat purchases.
+- **Lost:** Customers who have been inactive for a long time and have low engagement.
+
+### Business Application
+
+The segmentation helps identify customer retention opportunities, prioritize marketing campaigns, and propose a budget allocation strategy.
 
 Power BI Dashboard
 
@@ -134,30 +150,20 @@ Repository Structure
 
 Customer\_Segmentation\_RFM/
 
-      ├── data/
-      |  └── Online Retail.xlsx
-      | 
-      ├── notebooks/
-      | └── Customer\_Segmentation\_RFM.ipynb
-      |   
-      ├── output/│             
-      |      ├── customer\_rfm.csv
-      |      ├── segment\_summary.csv
-      |      └── cleaned\_transactions.csv
-      |        
-      |── powerbi
-      | └── Retail\_Ecommerce\_Customer\_Segmentation\_RFM.pbix 
-      ├── screenshots/   
-      |   ├── customer\_segmentation.png 
-      |   └── retention\_budget\_strategy.png
-      |
-      └── README.md
-      
----
+```text
+Customer-Segmentation-RFM/
+│
+├── 01_RFM_Analysis.ipynb
+├── customer_rfm.csv
+├── segment_summary.csv
+├── Retail_Ecommerce_Customer_Segmentation_RFM.pbix
+├── customer_segmentation.png
+├── retention_budget_strategy.png
+└── README.md
 
-## Dashboard Screenshots
-
-### Page 1 — Customer Segmentation
+```
+Dashboard Screenshots
+ Page 1 — Customer Segmentation
 ![Customer Segmentation Dashboard](customer_segmentation.png)
 
 ### Page 2 — Retention & Budget Strategy
