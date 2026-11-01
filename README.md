@@ -86,16 +86,17 @@ Page 2 --- Retention \& Budget Strategy
 
 Proposed Marketing Budget Allocation
 
-Segment             Proposed Allocation
-
-\---
-
-At Risk                             30%
+Segment              Proposed Allocation
+----------------------------------------
+At Risk 
+                                    30%
+                                    
 Champions                           25%
 Loyal                               25%
 New / Potential                     10%
 Lost                                10%
 Total                              100%
+
 Key Findings
 
 * The analysis identified 4,338 customers across five RFM segments.
