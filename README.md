@@ -153,12 +153,14 @@ Customer\_Segmentation\_RFM/
       |
       └── README.md
       
+---
 
-Dashboard Screenshots
+## Dashboard Screenshots
 
-Page 1 — Customer Segmentation
-![Customer Segmentation Dashboard](Screenshots/customer_segmentation.png)
+### Page 1 — Customer Segmentation
+![Customer Segmentation Dashboard](customer_segmentation.png)
 
-Page 2 — Retention & Budget Strategy
-![Retention & Budget Strategy Dashboard](Screenshots/retention_budget_strategy.png)
+### Page 2 — Retention & Budget Strategy
+![Retention & Budget Strategy Dashboard](retention_budget_strategy.png)
+
 
